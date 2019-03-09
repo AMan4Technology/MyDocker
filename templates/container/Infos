@@ -1,0 +1,4 @@
+{{define "Infos"}}
+{{"id\tID\tName\tPID\tSTATUS\tCOMMAND\tCREATED" | print}}
+{{range $i,$_ := .}}{{printf "%d\t%s\t%s\t%s\t%s\t%s\t%s\n" $i .ID .Name .Pid .Status .Command .CreatedTime}}{{end}}
+{{end}}

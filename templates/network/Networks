@@ -1,0 +1,4 @@
+{{define "networks"}}
+{{"Name\tIPRange\tDriver" | println}}
+{{range $name,$_:= .}}{{printf "%s\t%s\t%s\n" .Name .IPRange .Driver }}{{end}}
+{{end}}
